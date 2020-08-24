@@ -1,0 +1,7 @@
+<h1>twitterclone blog details</h1>
+<p>title: <%= @blog.title %></p>
+<p>content: <%= @blog.content %></p>
+<br>
+<p><%= link_to 'post', edit_blog_path(@blog.id) %></p>
+<p><%= link_to 'delete', blog_path(@blog.id), method: :delete, data: {confirm: 'are you sure you want to', cancel: 'cancel', commit: 'post'}, title: 'cofirmation？' %></p>
+<% end %>

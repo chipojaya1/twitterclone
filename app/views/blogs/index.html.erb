@@ -1,0 +1,19 @@
+<h1>twitterclone blog list</h1>
+<p><%= notice %><​/p>
+<table>
+<tr>
+  <th>title</th>
+  <th>content</th>
+</tr>
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= blog.title %></td>
+    <td><%= blog.content %></td>
+    <td><%= blog.user.name %></td>
+    <td><%= link_to 'confirm details of blog', blog_path(blog.id) %></td>
+    <td><%= link_to 'edit blog', edit_blog_path(blog.id) , data:{confirm: "are you sure you want to edit blog?"}  %></td>
+    <td><%= link_to 'delete blog', blog_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "new", new_blog_path %>

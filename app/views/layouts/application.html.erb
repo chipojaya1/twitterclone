@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>twitterclone login</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "#{key}") %>
+    <% end %>
+    <% if logged_in? %>
+      <%= link_to 'details', user_path(current_user.id) %>
+      <%= link_to 'logout', blog_path(current_user.id), method: :delete %>
+    <%= else %>
+      <%= link_to 'sign up', blog_path(@blogs) %>
+      <%= link_to 'login', new_blog_path(@blogs) %>
+    <%= yield %>
+    <footer>
+      <p>Copyright © 2020 This clone twitter is by Chipo <br>
+        All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -2550,3 +2550,457 @@ Migrating to Blogs (20200821013629)
 Migrating to Blogs (20200821013629)
   [1m[35m (3.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1040802489160564200)[0m
   ↳ bin/rails:9
+Started GET "/" for 10.0.2.2 at 2020-08-25 02:59:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+better_errors (2.7.1) lib/better_errors/middleware.rb:59:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:00:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+better_errors (2.7.1) lib/better_errors/middleware.rb:59:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:00:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+better_errors (2.7.1) lib/better_errors/middleware.rb:59:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1040802489160564200)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBlogs (20200825025319)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (28.8ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" bigserial primary key, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200825025319_create_blogs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200825025319"]]
+  ↳ bin/rails:9
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (23.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-25 03:01:22.000247"], ["updated_at", "2020-08-25 03:01:22.000247"]]
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1040802489160564200)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:02:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (29.7ms)
+Completed 500 Internal Server Error in 507ms (ActiveRecord: 8.7ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:29: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:29: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:10:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (25.5ms)
+Completed 500 Internal Server Error in 488ms (ActiveRecord: 8.4ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:18: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:18: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:12:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 510ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:22: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:27:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 7524ms (Views: 7397.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-25 03:27:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (555.6ms)
+  Rendered blogs/new.html.erb within layouts/application (668.6ms)
+Completed 200 OK in 1716ms (Views: 1548.5ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:38:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 2424ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blog' for #<#<Class:0x0000000003d92e40>:0x00007efe040909a8>
+Did you mean?  @blogs):
+    11:     <div id="navigation">
+    12:     <nav>
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path(blog.id) %></li>
+    15:         <li><%= link_to 'confirm details of blog', blog_path(blog.id) %></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path(blog.id) , data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blog_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2834329711423379669_69814727256500'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:38:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (21.4ms)
+Completed 500 Internal Server Error in 2387ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blog' for #<#<Class:0x0000000003d92e40>:0x00007efe08ce7478>
+Did you mean?  @blogs):
+    12:     <nav>
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blog_path(blog.id) %></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path(blog.id) , data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blog_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2834329711423379669_69814767327360'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:39:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 1193ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"blogs"}, missing required keys: [:id]):
+    12:     <nav>
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blog_path%></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path , data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blog_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2834329711423379669_69814772703800'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:40:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 1190ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"blogs"}, missing required keys: [:id]):
+    12:     <nav>
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blog_path %></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path , data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blog_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2834329711423379669_69814768905000'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:40:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 1147ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"blogs"}, missing required keys: [:id]):
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm', blogs_path %></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path , data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blog_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+    19:     </nav>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__2834329711423379669_69814727573860'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:41:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 2306ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_blogs_path' for #<#<Class:0x0000000003d92e40>:0x00007efe09b606a8>
+Did you mean?  edit_blog_path):
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blogs_path %></li>
+    16:         <li><%= link_to 'edit blog', edit_blogs_path , data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blogs_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+    19:     </nav>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__2834329711423379669_69814774883340'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:42:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 2589ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_blogs_path' for #<#<Class:0x0000000003d92e40>:0x00007efe09a53b70>
+Did you mean?  edit_blog_path):
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blogs_path %></li>
+    16:         <li><%= link_to 'edit blog', edit_blogs_path, data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blogs_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+    19:     </nav>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__2834329711423379669_69814774359720'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:42:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 1155ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"blogs"}, missing required keys: [:id]):
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blogs_path %></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path, data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blogs_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+    19:     </nav>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__2834329711423379669_69814768536200'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 03:43:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (13.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 1053ms (ActiveRecord: 13.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"blogs"}, missing required keys: [:id]):
+    13:       <ul class="header"
+    14:         <li><%= link_to 'post', new_blog_path %></li>
+    15:         <li><%= link_to 'confirm details of blog', blogs_path %></li>
+    16:         <li><%= link_to 'edit blog', edit_blog_path, method: :edit, data:{confirm: "are you sure you want to edit blog?"}  %></li>
+    17:         <li><%= link_to 'delete blog', blogs_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></li>
+    18:       </ul>
+    19:     </nav>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__2834329711423379669_69814726968800'

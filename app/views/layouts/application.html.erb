@@ -8,19 +8,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "#{key}") %>
-    <% end %>
-    <% if logged_in? %>
-      <%= link_to 'details', user_path(current_user.id) %>
-      <%= link_to 'logout', blog_path(current_user.id), method: :delete %>
-    <%= else %>
-      <%= link_to 'sign up', blog_path(@blogs) %>
-      <%= link_to 'login', new_blog_path(@blogs) %>
+    <div id="navigation">
+    <nav>
+      <ul class="header"
+        <li><%= link_to 'top', blogs_path %></li>
+        <li><%= link_to 'new', new_blog_path %></li>
+      </ul>
+    </nav>
+    </div>
     <%= yield %>
-    <footer>
-      <p>Copyright © 2020 This clone twitter is by Chipo <br>
+  <footer>
+    <p>Copyright © 2020 This clone twitter is by Chipo <br>
         All Rights Reserved.</p>
-    </footer>
+  </footer>
   </body>
 </html>

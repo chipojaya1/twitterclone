@@ -5,7 +5,11 @@
   <th>title</th>
   <th>content</th>
 </tr>
+<%= link_to 'new blog', new_blog_path %>
 <% @blogs.each do |blog| %>
+<div>
+   <%= blog.blog %>
+ </div>
   <tr>
     <td><%= blog.title %></td>
     <td><%= blog.content %></td>

@@ -4,7 +4,5 @@ Rails.application.routes.draw do
       post :confirm
     end
   end
-  
   root to: "blogs#index"
-  devise_for :users
 end

@@ -32,3 +32,4 @@ production:
   database: twitterclone_production
   username: twitterclone
   password: <%= ENV['TWITTERCLONE_DATABASE_PASSWORD'] %>
+  socket: twitterclone

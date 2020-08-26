@@ -1,7 +1,7 @@
 <%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
-      <h2><%= @blog.errors.count %>there is an error</h2>
+      <h2><%= pluralize(@blog.errors.count, "error") %>cannot send due to error</h2>
       <ul>
         <% @blog.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -10,13 +10,13 @@
     </div>
   <% end %>
   <div class="blog_title">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :tweet %>
+    <%= form.text_field :tweet %>
   </div>
   <div class="blog_content">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.label :post %>
+    <%= form.text_field :post %>
   </div>
   <%= form.submit %>
 <% end %>
-<%= link_to "return to blog details page", blogs_path %>
+<%= link_to "top", blogs_path %>

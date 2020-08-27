@@ -1,9 +1,9 @@
-<h1>twitterclone blog details</h1>
+<p id="notice"><%= notice %></p>
+
 <p>
-  <strong>tweet post</strong>
-   <%= @blog.blog %>
- </p>
-<%= link_to 'back', blogs_path %> |
-<%= link_to 'edit', edit_blog_path(@blog) %> |
-<%= link_to 'delete', blog_path(@blog), method: :delete, data: {confirm: 'are you sure you want to', cancel: 'cancel', commit: 'post'}, title: 'cofirmation？' %>
-<% yield %>
+  <strong>Content:</strong>
+  <%= @blog.content %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

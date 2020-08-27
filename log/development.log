@@ -3198,3 +3198,1727 @@ Migrating to Users (20200826111136)
   ↳ bin/rails:9
   [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:18:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (23.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+better_errors (2.7.1) lib/better_errors/middleware.rb:59:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1040802489160564200)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Users (20200826111136)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200826111136"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (47.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1040802489160564200)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:20:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (28.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (65.2ms)
+Completed 500 Internal Server Error in 613ms (ActiveRecord: 35.7ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:11: syntax error, unexpected ')', expecting then or ';' or '\n'
+...er.append=( if flash[:notice] );@output_buffer.safe_append='
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:13: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...fer.append=( if flash[:alert] );@output_buffer.safe_append='
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:16: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:18: syntax error, unexpected '='
+...end=  link_to root_path, class="navbar" do @output_buffer.sa...
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:18: syntax error, unexpected do (for block), expecting ')'
+...to root_path, class="navbar" do @output_buffer.safe_append='
+...                             ^~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:20: syntax error, unexpected end, expecting ')'
+'.freeze;       end 
+                ^~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:29: syntax error, unexpected class, expecting do or '{' or '('
+...tweetblog', new_blog_path class="button" );@output_buffer.sa...
+...                          ^~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:46: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:48: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:11: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:13: syntax error, unexpected end
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected end
+app/views/layouts/application.html.erb:18: syntax error, unexpected '='
+app/views/layouts/application.html.erb:18: syntax error, unexpected do (for block), expecting ')'
+app/views/layouts/application.html.erb:20: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected class, expecting do or '{' or '('
+app/views/layouts/application.html.erb:46: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:48: syntax error, unexpected end, expecting ')'
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:21:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 459ms (ActiveRecord: 1.6ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+...end=  link_to root_path, class="navbar" do @output_buffer.sa...
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+...to root_path, class="navbar" do @output_buffer.safe_append='
+...                             ^~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+...tweetblog', new_blog_path class="button" );@output_buffer.sa...
+...                          ^~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:22:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 493ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+...end=  link_to blog_path, class="navbar" do @output_buffer.sa...
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+...to blog_path, class="navbar" do @output_buffer.safe_append='
+...                             ^~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+...tweetblog', new_blog_path class="button" );@output_buffer.sa...
+...                          ^~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:22:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 2.2ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+...nd=  link_to blogs_path, class="navbar" do @output_buffer.sa...
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+...o blogs_path, class="navbar" do @output_buffer.safe_append='
+...                             ^~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+...tweetblog', new_blog_path class="button" );@output_buffer.sa...
+...                          ^~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:22:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 394ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+...k_to blogs_path(@blogs), class="navbar" do @output_buffer.sa...
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+...path(@blogs), class="navbar" do @output_buffer.safe_append='
+...                             ^~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+...tweetblog', new_blog_path class="button" );@output_buffer.sa...
+...                          ^~~~~
+/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected '='
+app/views/layouts/application.html.erb:14: syntax error, unexpected do (for block), expecting end
+app/views/layouts/application.html.erb:25: syntax error, unexpected class, expecting do or '{' or '('
+app/views/layouts/application.html.erb:42: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:23:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 442ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/layouts/application.html.erb:24: syntax error, unexpected class, expecting do or '{' or '('
+...tweetblog', new_blog_path class="button" );@output_buffer.sa...
+...                          ^~~~~):
+  
+app/views/layouts/application.html.erb:24: syntax error, unexpected class, expecting do or '{' or '('
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:24:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 4436ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected selector or at-rule, was "}"):
+    4:     <title>twitterclone login</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/stylesheets/blogs.scss:25
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1169950899626069843_69915831453480'
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:25:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 5535ms (Views: 5367.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:26:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (3.0ms)
+  Rendered blogs/new.html.erb within layouts/application (106.2ms)
+Completed 500 Internal Server Error in 494ms (ActiveRecord: 10.5ms)
+
+
+  
+SyntaxError (/home/vagrant/workspace/twitterclone/app/views/blogs/_form.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+...er.append=( form.submit, class: "button" );@output_buffer.sa...
+...                         ^~~~~~):
+  
+app/views/blogs/_form.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915730416280'
+Started GET "/" for 10.0.2.2 at 2020-08-27 07:27:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1001ms (Views: 857.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:27:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 940ms (Views: 843.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:27:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 1641ms (Views: 1520.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:29:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 962ms (Views: 850.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:29:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (1026.8ms)
+  Rendered blogs/new.html.erb within layouts/application (1150.4ms)
+Completed 200 OK in 2178ms (Views: 2060.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 07:29:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8xdBzeGglFUAH07fvbOdP/B0gPc/j9WIWHqF1jhRRp6eocVdqcfLbwdkYWUID8/IbMIECJhOONBhEuPTd2yHFw==", "blog"=>{"blog_blog"=>"hi my name is Chipo"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :blog_blog
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (16.8ms)
+  Rendered blogs/new.html.erb within layouts/application (149.2ms)
+Completed 200 OK in 1596ms (Views: 1058.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:30:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1055ms (Views: 943.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:30:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.8ms)
+  Rendered blogs/new.html.erb within layouts/application (112.6ms)
+Completed 200 OK in 1091ms (Views: 985.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:30:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 960ms (Views: 835.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:30:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (12.3ms)
+  Rendered blogs/new.html.erb within layouts/application (122.0ms)
+Completed 200 OK in 1122ms (Views: 1017.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 07:30:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A6qh+7QszLokTbTttF/M7OE3Q/F4+FmamVQw44J4CRtuHCVr/EuTgCM2m1cB454bfYHHDt85tMKgPFbmzUXIkg==", "blog"=>{"blog_blog"=>"hi"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :blog_blog
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (16.0ms)
+  Rendered blogs/new.html.erb within layouts/application (152.0ms)
+Completed 200 OK in 1314ms (Views: 1292.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:30:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 1247ms (Views: 1120.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:30:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (8.2ms)
+  Rendered blogs/new.html.erb within layouts/application (140.9ms)
+Completed 200 OK in 1336ms (Views: 1170.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:30:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (10.5ms)
+  Rendered blogs/new.html.erb within layouts/application (101.3ms)
+Completed 200 OK in 919ms (Views: 822.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:31:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 1105ms (Views: 1007.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:31:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (8.2ms)
+  Rendered blogs/new.html.erb within layouts/application (150.2ms)
+Completed 200 OK in 1336ms (Views: 1219.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 07:31:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eeaG9oHfAm5YtvaaObj9EIIhTAQJTOu/eK1ds2EYqBkUUAJmybhdVF/N2SCMBK/nHpfI+66NBudBxTu2LiVpkA==", "blog"=>{"blog_blog"=>"hi my name is Chipo"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :blog_blog
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (12.9ms)
+  Rendered blogs/new.html.erb within layouts/application (118.2ms)
+Completed 200 OK in 943ms (Views: 921.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:31:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 1272ms (Views: 1129.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:31:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 1187ms (Views: 1063.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:37:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 902ms (Views: 780.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:37:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (750.8ms)
+  Rendered blogs/new.html.erb within layouts/application (882.0ms)
+Completed 500 Internal Server Error in 1310ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007f2d18f018f0>):
+    11:   <% end %>
+    12:   <div clas="field"
+    13:     <div class="content">
+    14:       <%= form.input :blog_blog, label: "Blog about it", class: "text_field",  wrapper: false, placeholder:  "Compose new blog tweet..." %>
+    15:     </div>
+    16:   </div>
+    17:   <%= form.submit %>
+  
+app/views/blogs/_form.html.erb:14:in `block in _app_views_blogs__form_html_erb___4243493638502491805_69915834312640'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb___4243493638502491805_69915834312640'
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915834295680'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:38:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (920.7ms)
+  Rendered blogs/new.html.erb within layouts/application (1042.5ms)
+Completed 500 Internal Server Error in 1647ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<ActionView::Helpers::FormBuilder:0x00007f2d0d667b28>):
+    11:   <% end %>
+    12:   <div clas="field"
+    13:     <div class="content">
+    14:       <%= form.content :blog_blog, label: "Blog about it", class: "text_field",  wrapper: false, placeholder:  "Compose new blog tweet..." %>
+    15:     </div>
+    16:   </div>
+    17:   <%= form.submit %>
+  
+app/views/blogs/_form.html.erb:14:in `block in _app_views_blogs__form_html_erb___4243493638502491805_69915737405820'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb___4243493638502491805_69915737405820'
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915737331960'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:42:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (758.0ms)
+  Rendered blogs/new.html.erb within layouts/application (885.6ms)
+Completed 500 Internal Server Error in 1284ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007f2d18ecd1e0>):
+    1: <%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>
+    2:   <div clas="field"
+    3:     <div class="container">
+    4:       <%= form.input :blog, label: "Blog it" %>
+    5:       <%= form.text_field :blog_blog, wrapper: false, placeholder:  "Compose new blog tweet..." %>
+    6:     </div>
+    7:   </div>
+  
+app/views/blogs/_form.html.erb:4:in `block in _app_views_blogs__form_html_erb___4243493638502491805_69915834220000'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb___4243493638502491805_69915834220000'
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915834203080'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:42:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 938ms (Views: 854.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:42:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (1015.7ms)
+  Rendered blogs/new.html.erb within layouts/application (1128.5ms)
+Completed 500 Internal Server Error in 1548ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007f2d0dba08b0>):
+    1: <%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>
+    2:   <div clas="field"
+    3:     <div class="container">
+    4:       <%= form.input :blog, label: "Blog it" %>
+    5:       <%= form.text_field :blog_blog, wrapper: false, placeholder:  "Compose new blog tweet..." %>
+    6:     </div>
+    7:   </div>
+  
+app/views/blogs/_form.html.erb:4:in `block in _app_views_blogs__form_html_erb___4243493638502491805_69915740281140'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb___4243493638502491805_69915740281140'
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915740247340'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:42:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (625.8ms)
+  Rendered blogs/new.html.erb within layouts/application (1243.3ms)
+Completed 500 Internal Server Error in 1643ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<ActionView::Helpers::FormBuilder:0x00007f2d18ec8190>):
+    1: <%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>
+    2:   <div clas="field"
+    3:     <div class="container">
+    4:       <%= form.title :blog, label: "Blog it" %>
+    5:       <%= form.text_field :blog_blog, wrapper: false, placeholder:  "Compose new blog tweet..." %>
+    6:     </div>
+    7:   </div>
+  
+app/views/blogs/_form.html.erb:4:in `block in _app_views_blogs__form_html_erb___4243493638502491805_69915834210820'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb___4243493638502491805_69915834210820'
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915834195200'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:43:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (864.9ms)
+  Rendered blogs/new.html.erb within layouts/application (968.9ms)
+Completed 500 Internal Server Error in 1397ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<ActionView::Helpers::FormBuilder:0x00007f2d0d50a668>):
+    1: <%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>
+    2:   <div clas="field"
+    3:     <div class="container">
+    4:       <%= form.content :blog, label: "Blog it" %>
+    5:       <%= form.text_field :blog_blog, wrapper: false, placeholder:  "Compose new blog tweet..." %>
+    6:     </div>
+    7:   </div>
+  
+app/views/blogs/_form.html.erb:4:in `block in _app_views_blogs__form_html_erb___4243493638502491805_69915736860920'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb___4243493638502491805_69915736860920'
+app/views/blogs/new.html.erb:2:in `_app_views_blogs_new_html_erb___1663280877008995399_69915736778500'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:43:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (4.6ms)
+  Rendered blogs/new.html.erb within layouts/application (114.9ms)
+Completed 200 OK in 1082ms (Views: 927.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 07:44:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3yajweLTe450B9vmh+65ms8+fovX34iyEFu0Dv/Wd5joaodmOCTu/cNi61UDKaNsYNQOXqZ08mpwpIXdZwzU4A==", "blog"=>{"blog_blog"=>"hi my name is Chipo"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :blog_blog
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.5ms)
+  Rendered blogs/new.html.erb within layouts/application (133.9ms)
+Completed 200 OK in 1071ms (Views: 1060.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:44:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 895ms (Views: 776.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:44:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.2ms)
+  Rendered blogs/new.html.erb within layouts/application (150.7ms)
+Completed 200 OK in 1276ms (Views: 1155.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 07:46:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.1ms)
+  Rendered blogs/new.html.erb within layouts/application (113.6ms)
+Completed 200 OK in 1170ms (Views: 1034.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 07:46:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bfp/VrCX6uhqIqUSr8ABakUWswfijYMXsVBGNqR5ck5atlvxamB/m91HlaErBxuc6vzD0pMm+c/Rr3flPKPRNg==", "blog"=>{"content"=>"morning"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.4ms)
+  Rendered blogs/new.html.erb within layouts/application (86.7ms)
+Completed 200 OK in 854ms (Views: 841.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 07:46:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 867ms (Views: 783.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:00:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (5.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 1154ms (Views: 994.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 08:00:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.9ms)
+  Rendered blogs/new.html.erb within layouts/application (136.3ms)
+Completed 200 OK in 1042ms (Views: 929.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:00:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNgvaI7pflmspAHBPASUMNj05a10TB2B4AV3szTqBlv9bqv4xo4hY6vfLnuJuMbHREJhUtON8NnZbRG2e9fH0g==", "blog"=>{"content"=>"hello"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.7ms)
+  Rendered blogs/new.html.erb within layouts/application (118.9ms)
+Completed 200 OK in 930ms (Views: 915.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:01:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 888ms (Views: 799.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 08:01:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.8ms)
+  Rendered blogs/new.html.erb within layouts/application (139.3ms)
+Completed 200 OK in 1207ms (Views: 1089.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:01:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 1144ms (Views: 1042.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:01:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 1074ms (Views: 988.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:03:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 1130ms (Views: 923.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:11:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (10.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 1113ms (Views: 970.7ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:12:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 1067ms (Views: 938.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:12:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 862ms (Views: 740.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:13:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 1130ms (Views: 971.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs/show" for 10.0.2.2 at 2020-08-27 08:14:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 175ms (ActiveRecord: 2.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=show):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/show" for 10.0.2.2 at 2020-08-27 08:16:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 16ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=show):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:16:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 885ms (Views: 777.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:17:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 1097ms (Views: 936.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:17:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 899ms (Views: 766.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:19:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 1012ms (Views: 856.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:21:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 1170ms (Views: 983.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 08:21:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.0ms)
+  Rendered blogs/new.html.erb within layouts/application (106.1ms)
+Completed 200 OK in 1130ms (Views: 1024.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:21:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZUn1R1ftBCyIEdDZlmv2EL8+g2564HKfSXXijHID/PAI/3HXH4pbFo9q/2Mj16TnI4gHkd0hn8dwHYSJPT49eQ==", "blog"=>{"content"=>"Zhang"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.3ms)
+  Rendered blogs/new.html.erb within layouts/application (129.5ms)
+Completed 200 OK in 1141ms (Views: 1121.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:22:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 13ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:22:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (3.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 23ms (ActiveRecord: 3.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:26:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 12ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 08:26:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:9
+  Rendered blogs/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 1098ms (Views: 995.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 08:26:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.2ms)
+  Rendered blogs/new.html.erb within layouts/application (142.6ms)
+Completed 200 OK in 1200ms (Views: 1063.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:26:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xVFoaxdYjVs1p3GnmD0/GXFkIXWF5ucCGzYBHI+uz7yo5+z7Xz/SYTLcXh0tgW3u7dKliiInCloiXmcZwJMONQ==", "blog"=>{"content"=>"hello world"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.0ms)
+  Rendered blogs/new.html.erb within layouts/application (101.6ms)
+Completed 200 OK in 933ms (Views: 923.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:29:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (2.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 12ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:33:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 17ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:36:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 11ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:36:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6vH73xP2ZAlsZWineL1JLs0p/KpVptwEVt5jjrLO8uHdvd94yQHxetsAWBT8elPYYsOMfyQNptw2IVJdKhRRmQ==", "blog"=>{"content"=>"hello world"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.6ms)
+  Rendered blogs/new.html.erb within layouts/application (104.3ms)
+Completed 200 OK in 1012ms (Views: 996.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 08:36:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.5ms)
+  Rendered blogs/new.html.erb within layouts/application (119.3ms)
+Completed 200 OK in 1199ms (Views: 1074.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 08:38:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.3ms)
+  Rendered blogs/new.html.erb within layouts/application (100.4ms)
+Completed 200 OK in 972ms (Views: 854.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:38:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 12ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:42:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 26ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:43:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 11ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:44:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 10ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:50:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:52:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (2.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 176ms (ActiveRecord: 25.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:53:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DC2fpul7tG0FsGW5QlNubH5Dg3BJDNy+zJQDfSqZ8kg7YbsBM4whHrLVVQrGlHSa0anzpTinpmasazKuskNRMA==", "blog"=>{"content"=>"hello today"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:45:in `confirm'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:54:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DC2fpul7tG0FsGW5QlNubH5Dg3BJDNy+zJQDfSqZ8kg7YbsBM4whHrLVVQrGlHSa0anzpTinpmasazKuskNRMA==", "blog"=>{"content"=>"hello today"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:45:in `confirm'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:54:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DC2fpul7tG0FsGW5QlNubH5Dg3BJDNy+zJQDfSqZ8kg7YbsBM4whHrLVVQrGlHSa0anzpTinpmasazKuskNRMA==", "blog"=>{"content"=>"hello today"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:45:in `confirm'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 08:55:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DC2fpul7tG0FsGW5QlNubH5Dg3BJDNy+zJQDfSqZ8kg7YbsBM4whHrLVVQrGlHSa0anzpTinpmasazKuskNRMA==", "blog"=>{"content"=>"hello today"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:45:in `confirm'
+Started GET "/rails/info/routes" for 10.0.2.2 at 2020-08-27 09:07:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (77.0ms)
+  Rendered /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (33.1ms)
+  Rendered /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (149.1ms)
+Completed 200 OK in 235ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-08-27 09:14:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 3611ms (Views: 3472.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 09:14:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (252.3ms)
+  Rendered blogs/new.html.erb within layouts/application (493.8ms)
+Completed 200 OK in 1461ms (Views: 1333.9ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:15:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+e/dnqToSvBKec05Re7xoV5vndL47/HNjvtFMw7SCbeUWVkO7I8Vyk0C4oPwUqNWwtkZLV8uHJW3kyM2Qe/IPg==", "blog"=>{"content"=>"hi everyone"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:45:in `confirm'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:16:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 16ms (ActiveRecord: 2.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:16:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (2.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 10ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:19:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (4.8ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 26ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:19:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 17ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:19:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 16ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:21:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (3.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:53
+Completed 404 Not Found in 15ms (ActiveRecord: 3.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:53:in `set_blog'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 09:21:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 898ms (Views: 797.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 09:21:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (4.4ms)
+  Rendered blogs/new.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 955ms (Views: 854.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 09:22:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R5LLhQQ8ZXxy1Z7o6kfrBg3CIA6mqQQ0y0aI/zU2qKIqJE8VTFs6RnWusVJf+7nxkXSk8QFo6WzyLu76egtpKw==", "blog"=>{"content"=>"Cedrick"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:45:in `confirm'
+Started GET "/" for 10.0.2.2 at 2020-08-27 10:25:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (5.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:8
+  Rendered blogs/index.html.erb within layouts/application (76.5ms)
+Completed 200 OK in 4697ms (Views: 4233.3ms | ActiveRecord: 48.2ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 10:25:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (836.5ms)
+  Rendered blogs/new.html.erb within layouts/application (969.7ms)
+Completed 200 OK in 2317ms (Views: 2104.9ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:26:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WPWw0vZ4g3UNRdlmB9X/nCy2aOjuyQdCwCQETmp0jik1QzRCvh/cTwo+9tyyaa1rsADsF0kI6hr5TGJLJUlPoA==", "blog"=>{"title"=>"tweeter", "content"=>""}, "commit"=>"Create Blog"}
+Unpermitted parameters: :title, :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 28ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:26:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 38ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:26:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lnZtZEgi6jEEKYjDTmUiIhfmHv7Qkg72xahBRkIac5ehOknDktV/QrNMuHDKojjUuAxuK6E5dC6lV3CV2sDQ7w==", "blog"=>{"title"=>"tweeter", "content"=>"Zhang"}, "commit"=>"Create Blog"}
+Unpermitted parameters: :title, :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:26:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 15ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 10:27:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (4.6ms)
+  Rendered blogs/new.html.erb within layouts/application (133.8ms)
+Completed 200 OK in 1046ms (Views: 920.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 10:27:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 904ms (Views: 795.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 10:27:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.9ms)
+  Rendered blogs/new.html.erb within layouts/application (134.1ms)
+Completed 200 OK in 1091ms (Views: 987.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 10:27:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 902ms (Views: 801.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 10:35:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.0ms)
+  Rendered blogs/new.html.erb within layouts/application (114.6ms)
+Completed 200 OK in 1085ms (Views: 991.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:38:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 12ms (ActiveRecord: 2.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 10:41:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (4.0ms)
+  Rendered blogs/new.html.erb within layouts/application (90.8ms)
+Completed 200 OK in 963ms (Views: 862.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:44:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EmFdZd1HjEjBX8ODbJiUWMJLuOppIJLvTmRamCLycyklLXnCB7AZO3Y68zDoX46ubaHIPxiL6Dcum2tLuijQUQ==", "blog"=>{"content"=>""}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:44:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 10ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/" for 10.0.2.2 at 2020-08-27 10:57:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 2453ms (Views: 2300.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 10:57:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (126.1ms)
+  Rendered blogs/new.html.erb within layouts/application (305.8ms)
+Completed 200 OK in 1494ms (Views: 1343.6ms | ActiveRecord: 14.4ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:58:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tBo9/LeuxlPHJWqZAvpjzxSLm0Ql5WcGAxISK9XqBWLZrLls/8mZacBeRSO3RjE4iD0fu4Ikil46enQumtfE6w==", "blog"=>{"content"=>"third post"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 10:58:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 24ms (ActiveRecord: 2.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 11:13:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 956ms (Views: 851.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 11:13:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.2ms)
+  Rendered blogs/new.html.erb within layouts/application (135.9ms)
+Completed 200 OK in 1405ms (Views: 1298.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:14:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KorwzpAAG5pyytADUuZzMgPMHgSSwszE903cCNgR5q9HPHRe2GdEoHWx/7nnWiHFn3qa+zUDIZzOJboNlywnJg==", "blog"=>{"content"=>"hi everyone"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:14:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 10ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 11:14:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 1217ms (Views: 1123.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-08-27 11:18:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 1202ms (Views: 1029.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-27 11:32:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY created_at DESC[0m
+  ↳ app/views/blogs/index.html.erb:7
+  Rendered blogs/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 870ms (Views: 765.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-27 11:32:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (8.2ms)
+  Rendered blogs/new.html.erb within layouts/application (867.5ms)
+Completed 200 OK in 2086ms (Views: 1903.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:32:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqUEAGWsx71hFmlWbGA0V0T7u26UnESN+5tXdKbEog/fE4CQLcuYh2ZtRuzZ3Gag2E0/kTNdqdXC8zFx6fljhg==", "blog"=>{"content"=>"hi everyone"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:32:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 10ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:34:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 10ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:34:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 14ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:34:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nA9MVTXovrCzoIpy3NB44QTjl5M9pIJ38JqfAEscM6+rQ2jy7x8rwwTFusFYF2IXqwnnRkwP+K+QZa7T08aQ1w==", "blog"=>{"content"=>"hi everyone"}, "commit"=>"Create Blog"}
+Unpermitted parameter: :content
+Redirected to http://localhost:3000/blogs/confirm
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:34:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 9ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:35:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 16ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:38:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (2.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 23ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:39:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 18ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-27 11:40:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:54
+Completed 404 Not Found in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
+  
+app/controllers/blogs_controller.rb:54:in `set_blog'

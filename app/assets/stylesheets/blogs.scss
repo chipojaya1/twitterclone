@@ -16,10 +16,11 @@ h1 h2 h3 {
   text-align: center;
 }
 
-.notice {
+.notice .alert {
   width:auto;
   margin:auto;
   text-align: center;
+  color: green;
 }
 table {
   margin:auto;
@@ -36,6 +37,7 @@ table {
   margin:auto;
   text-align: center;
 }
+
 footer {
   width:100%;
   background-color: #696969;

@@ -1,22 +1,8 @@
-<%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>
-  <% if @blog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@blog.errors.count, "error") %>cannot send due to error</h2>
-      <ul>
-        <% @blog.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+<%= form_with(model: @blog, if action_name == 'new' url: confirm_blogs_path else blog_path end ) do |form| %>
+  <div clas="field"
+    <div class="container">
+      <%= form.text_field :content, wrapper: false, placeholder:  "Compose new blog tweet...", size: "37x8" %>
     </div>
-  <% end %>
-  <div class="blog_title">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
   </div>
-  <div class="blog_content">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
-  </div>
-  <%= form.submit :submit, class: "button" %>
+  <%= form.submit %>
 <% end %>
-<%= link_to "back", blogs_path %>

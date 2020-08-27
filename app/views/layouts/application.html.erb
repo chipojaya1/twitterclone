@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>twitterclone login</title>
+    <title>SessionLogin</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= if flash[:notice] %>
-      <p class="notice"><%= notice %></p>
-    <%= end %>
-    <%= if flash[:alert] %>
-      <p class="alert"><%= alert %></p>
-    <%= end %>
-
-    <nav>
-      <%= link_to blog_path, class="navbar" do %>
-      <% end %>
-        <h2> My twitter</h2>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div id="navigation" >
     <nav>
       <ul class="header"
         <li><%= link_to 'top', blogs_path %></li>
         <li><%= link_to 'new', new_blog_path %></li>
       </ul>
     </nav>
-    <%= yield %>
+  </div>
+  <%= yield %>
   <footer>
     <p>Copyright © 2020 This clone twitter is by Chipo <br>
-        All Rights Reserved.</p>
+       All Rights Reserved.</p>
   </footer>
   </body>
 </html>

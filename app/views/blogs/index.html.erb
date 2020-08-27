@@ -1,23 +1,39 @@
-<h1>twitterclone blog list</h1>
-<p><%= notice %><​/p>
+<h1>list all created posts</h1>
+<p class="notice"><%= notice %><​/p>
+<p class="alert"><%= alert %><​/p>
 <table>
 <tr>
-  <th>title</th>
-  <th>content</th>
+  <th>My twitter posts</th>
 </tr>
-<%= link_to 'new', new_blog_path %>
 <% @blogs.each do |blog| %>
-<div>
-   <%= blog.blog %>
- </div>
-  <tr>
-    <td><%= blog.title %></td>
-    <td><%= blog.content %></td>
-    <td><%= blog.user.name %></td>
-    <td><%= link_to 'confirm', blog_path(@blog) %></td>
-    <td><%= link_to 'edit', edit_blog_path(@blog), data:{confirm: "are you sure you want to edit blog?"}  %></td>
-    <td><%= link_to 'delete', blog_path(@blog), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
-  </tr>
+    <tr  class="content">
+      <strong>User Name</strong><br>
+      <small>@userid</small><br>
+      <td><%= blog.content %></td>
+      <td><%= link_to 'create', blogs_path(blog.id) %></td>
+      <td><%= link_to 'edit', edit_blog_path(blog.id), data:{confirm: "are you sure you want to edit blog?"}  %></td>
+      <td><%= link_to 'delete', blogs_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
+    </tr>
 <% end %>
 </table>
 <%= link_to 'new', new_blog_path %>
+
+<h1>Rblog一覧</h1>
+<p class ="notice"><%= notice %></p>
+<table>
+  <tr>
+    <th class="content">内容</th>
+    <th class= "created_at">投稿日時</th>
+  </tr>
+  <% @blogs.each do |blog| %>
+    <tr>
+      <td class= "content"><%= blog.content %></td>
+      <td class= "created_at"><%= link_to blog.created_at, format: :default %></td>
+      <td><%= link_to '編集', edit_blog_path(blog.id) %></td>
+      <td><%= link_to '削除', blog_path(blog.id), method: :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<div class="link">
+  <a href="/blogs/new" class = "link">新しくつぶやく</a>
+</div>

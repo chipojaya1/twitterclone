@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_111136) do
   enable_extension "plpgsql"
 
   create_table "blogs", force: :cascade do |t|
-    t.string "content"
+    t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

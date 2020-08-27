@@ -4922,3 +4922,55 @@ Completed 404 Not Found in 9ms (ActiveRecord: 0.6ms)
 ActiveRecord::RecordNotFound (Couldn't find Blog with 'id'=confirm):
   
 app/controllers/blogs_controller.rb:54:in `set_blog'
+Started GET "/" for 10.0.2.2 at 2020-08-27 18:47:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (55.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 605ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL
+... 'delete', blogs_path), method: :delete, data:{confirm: "are...
+...                        ^~~~~~~
+/home/vagrant/workspace/twitterclone/app/views/blogs/index.html.erb:14: syntax error, unexpected ')', expecting end
+...re you want to delete blog?"} );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/workspace/twitterclone/app/views/blogs/index.html.erb:27: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~:
+  app/views/blogs/index.html.erb:14:in `'
+
+Started POST "/__better_errors/8779737e2b7e2c58/variables" for 10.0.2.2 at 2020-08-27 18:47:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2020-08-27 18:47:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (207.1ms)
+Completed 500 Internal Server Error in 535ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - undefined method `each' for nil:NilClass:
+  app/views/blogs/index.html.erb:9:in `view template'
+
+Started POST "/__better_errors/69aa7f6b58a35d29/variables" for 10.0.2.2 at 2020-08-27 18:47:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2020-08-27 18:50:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (106.9ms)
+Completed 500 Internal Server Error in 454ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - undefined method `each' for nil:NilClass:
+  app/views/blogs/index.html.erb:9:in `view template'
+
+Started POST "/__better_errors/0931da9ee7cc4189/variables" for 10.0.2.2 at 2020-08-27 18:50:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

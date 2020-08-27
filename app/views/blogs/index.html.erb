@@ -11,7 +11,7 @@
       <td class= "content"><%= blog.content %></td>
       <td class= "created_at"><%= link_to blog.created_at, format: :default %></td>
       <td><%= link_to 'edit', edit_blog_path(@blogs), data:{confirm: "are you sure you want to edit blog?"}  %></td>
-      <td><%= link_to 'delete', blogs_path), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
+      <td><%= link_to 'delete', blogs_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
     </tr>
     <div class="content">
       <strong>User Name</strong><br>

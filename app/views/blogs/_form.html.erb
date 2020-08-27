@@ -10,13 +10,13 @@
     </div>
   <% end %>
   <div class="blog_title">
-    <%= form.label :tweet %>
-    <%= form.text_field :tweet %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
   </div>
   <div class="blog_content">
-    <%= form.label :post %>
-    <%= form.text_field :post %>
+    <%= form.label :content %>
+    <%= form.text_field :content %>
   </div>
-  <%= form.submit %>
+  <%= form.submit :submit, class: "button" %>
 <% end %>
-<%= link_to "top", blogs_path %>
+<%= link_to "back", blogs_path %>

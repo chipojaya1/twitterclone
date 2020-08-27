@@ -1,2 +1,4 @@
 <h2>twitterclone edit blog</h2>
-<%= render 'form' %>
+<%= render 'form', blog: @blog %>
+<%= link_to 'show', @blog %> |
+<%= link_to 'back', blogs_path %>

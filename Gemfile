@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '3.1.11'
 # gem 'mini_magick', '~> 4.8'
 # gem 'capistrano-rails', group: :development
-# gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.3'
 
 group :development, :test do

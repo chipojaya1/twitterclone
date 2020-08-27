@@ -2,38 +2,23 @@
 <p class="notice"><%= notice %><​/p>
 <p class="alert"><%= alert %><​/p>
 <table>
-<tr>
-  <th>My twitter posts</th>
-</tr>
-<% @blogs.each do |blog| %>
-    <tr  class="content">
-      <strong>User Name</strong><br>
-      <small>@userid</small><br>
-      <td><%= blog.content %></td>
-      <td><%= link_to 'create', blogs_path(blog.id) %></td>
-      <td><%= link_to 'edit', edit_blog_path(blog.id), data:{confirm: "are you sure you want to edit blog?"}  %></td>
-      <td><%= link_to 'delete', blogs_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
-    </tr>
-<% end %>
-</table>
-<%= link_to 'new', new_blog_path %>
-
-<h1>Rblog一覧</h1>
-<p class ="notice"><%= notice %></p>
-<table>
   <tr>
-    <th class="content">内容</th>
-    <th class= "created_at">投稿日時</th>
+    <th class="content">content</th>
+    <th class= "created_at">date posted</th>
   </tr>
   <% @blogs.each do |blog| %>
     <tr>
       <td class= "content"><%= blog.content %></td>
       <td class= "created_at"><%= link_to blog.created_at, format: :default %></td>
-      <td><%= link_to '編集', edit_blog_path(blog.id) %></td>
-      <td><%= link_to '削除', blog_path(blog.id), method: :delete %></td>
+      <td><%= link_to 'edit', edit_blog_path(@blogs), data:{confirm: "are you sure you want to edit blog?"}  %></td>
+      <td><%= link_to 'delete', blogs_path), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
     </tr>
+    <div class="content">
+      <strong>User Name</strong><br>
+      <small>@userid</small><br>
+    </div>
   <% end %>
 </table>
 <div class="link">
-  <a href="/blogs/new" class = "link">新しくつぶやく</a>
+  <a href="/blogs/new" class = "link">New blog post</a>
 </div>

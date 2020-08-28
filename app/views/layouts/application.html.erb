@@ -5,16 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <p class="notice"></p><%= notice %>
+    <p class="alert"></p><%= alert %>
     <div id="navigation" >
     <nav>
       <ul class="header"
-        <li><%= link_to 'top', blogs_path %></li>
-        <li><%= link_to 'new', new_blog_path %></li>
+        <li><%= link_to 'top', root_path %></li>
+        <li><%= link_to 'new blog', root_path %></li>
       </ul>
     </nav>
   </div>

@@ -1,22 +1,23 @@
 <h1>list all created posts</h1>
-<p class="notice"><%= notice %><​/p>
-<p class="alert"><%= alert %><​/p>
+<p class="notice"><%= notice %>
+<p class="alert"><%= alert %>
 <table>
   <tr>
-    <th class="content">content</th>
+    <th></th>
+    <th class="content">blog content</th>
     <th class= "created_at">date posted</th>
   </tr>
-  <% @blogs.each do |blog| %>
+  <% @blog.each do |blog| %>
     <tr>
+      <td class="content">
+        <strong>Chipo Jaya</strong><br>
+        <small>@diverchipo</small><br>
+      </td>
       <td class= "content"><%= blog.content %></td>
       <td class= "created_at"><%= link_to blog.created_at, format: :default %></td>
-      <td><%= link_to 'edit', edit_blog_path(@blogs), data:{confirm: "are you sure you want to edit blog?"}  %></td>
-      <td><%= link_to 'delete', blogs_path, method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
+      <td><%= link_to 'edit', edit_blog_path(blog.id), data:{confirm: "are you sure you want to edit blog?"}  %></td>
+      <td><%= link_to 'delete', blog_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
     </tr>
-    <div class="content">
-      <strong>User Name</strong><br>
-      <small>@userid</small><br>
-    </div>
   <% end %>
 </table>
 <div class="link">

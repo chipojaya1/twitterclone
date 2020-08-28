@@ -2,7 +2,8 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   def index
-    @blog = Blog.all
+    @blogs = Blog.all
+    @blog = Blog.new(blog_params)
   end
 
   def show
@@ -14,14 +15,10 @@ class BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(blog_params)
-    if params[:back]
-      render :new
+    if @blog.save
+      redirect_to blogs_path, notice: "blog successfully created"
     else
-      if @blog.save
-        redirect_to blogs_path, notice: "blog successfully created"
-      else
-        render :new
-      end
+      render :new
     end
   end
 
@@ -49,7 +46,7 @@ class BlogsController < ApplicationController
 
   private
   def blog_params
-    params.require(:blog).permit(:content)
+    params.require(:blog).permit(:blog)
   end
   def set_blog
     @blog = Blog.find(params[:id])

@@ -2,6 +2,7 @@ body {
   background-color: #fff;
   color: #333;
   text-align: center;
+  height: 100%;
 }
 header {
   width:100%;
@@ -9,18 +10,14 @@ header {
   color: white;
   margin-top: -30px;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 header ul a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 5px;
-  text-align: right;
-  ul li {
-    list-style: square;
-    word-spacing: 2rem;
-  }
+  padding: 10px;
+  text-align: left;
 }
 p {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -48,9 +45,10 @@ label {
 table {
   margin:auto;
   background-color: #fff;
+  display: block;
 }
 .created_at .updated_at {
-  padding-left: 100px;
+  padding-left: 50px;
 }
 .link {
   width:auto;
@@ -67,14 +65,13 @@ table {
   border: 2px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #lightblue;
  }
 footer {
-  width:100%;
+  width: 100%;
   background-color: #2F4F4F;
   color: white;
   text-align: center;
-  margin: auto;
   position: absolute;
   bottom: 0;
 }

@@ -1,46 +1,77 @@
 body {
   background-color: #FFC0CB;
+  color: #333;
+  text-align: center;
 }
-.top {
-  background-color: #696969;
-}
-.default .brand{
+header {
+  width:100%;
+  background-color: #2F4F4F;
   color: white;
+  text-align: center;
+  margin: -30px;
+  width: 100%;
+  font-size: 1.2rem;
 }
-.default .navigation>li>a{
-  color: white;
+header ul a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  ul li {
+    list-style: square;
+    word-spacing: 2rem;
+ }
+}
+p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 18px;
+}
+#navigation{
+  width: auto;
+  margin-bottom: 10px;
 }
 h1 h2 h3 {
   width:auto;
   margin:auto;
   text-align: center;
 }
-
+label {
+  display: block;
+}
 .notice .alert {
   width:auto;
   margin:auto;
   text-align: center;
-  color: green;
+  background-color: lightblue;
 }
 table {
   margin:auto;
-  background-color: lightgreen;
+  background-color: #fff;
 }
-.created_at {
+.created_at .updated_at {
   padding-left: 100px;
-}
-.updated_at {
-  padding-right: 100px;
 }
 .link {
   width:auto;
   margin:auto;
   text-align: center;
 }
-
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+.error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+ }
 footer {
   width:100%;
-  background-color: #696969;
+  background-color: #2F4F4F;
   color: white;
   text-align: center;
   margin: auto;

@@ -5,10 +5,9 @@ body {
 }
 header {
   width:100%;
-  background-color: #blue;
+  background-color: #2F4F4F;
   color: white;
-  text-align: center;
-  margin: -30px;
+  margin-top: -30px;
   width: 100%;
   font-size: 1.2rem;
 }
@@ -17,10 +16,11 @@ header ul a {
   text-decoration: none;
   display: block;
   padding: 5px;
+  text-align: right;
   ul li {
     list-style: square;
     word-spacing: 2rem;
- }
+  }
 }
 p {
   font-family: verdana, arial, helvetica, sans-serif;

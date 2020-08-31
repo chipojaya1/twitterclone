@@ -41,18 +41,12 @@ class BlogsController < ApplicationController
     redirect_to blogs_url, notice: "blog successfully deleted!"
   end
 
-  def confirm
-   @blog = Blog.new(blog_params)
-   render :new if @blog.invalid?
-  end
-
   private
+    def blog_params
+      params.require(:blog).permit(:content)
+    end
 
-  def blog_params
-    params.require(:blog).permit(:content)
-  end
-
-  def set_blog
-    @blog = Blog.find(params[:id])
-  end
+    def set_blog
+      @blog = Blog.find(params[:id])
+    end
 end

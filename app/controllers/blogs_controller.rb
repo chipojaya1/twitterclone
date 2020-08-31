@@ -30,7 +30,7 @@ class BlogsController < ApplicationController
 
   def update
     if @blog.update(blog_params)
-      redirect_to blogs_path, notice: "blog succefully updated!"
+      redirect_to blogs_path, notice: "blog successfully updated!"
     else
       render :edit
     end
@@ -45,7 +45,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new(blog_params)
     render :new if @blog.invalid?
   end
-  
+
   private
     def blog_params
       params.require(:blog).permit(:content)

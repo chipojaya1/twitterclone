@@ -1,17 +1,17 @@
 <%= form_with(model: @blog, local: true ,url: choose_new_or_edit  ) do |form| %>
-<% if @blog.errors.any? %>
-  <div class="error_explanation">
-    <h2><%= @blog.errors.count %>this blog cannot be saved due to error</h2>
-    <ul>
+  <% if @blog.errors.any? %>
+    <div class="error_explanation">
+      <h2><%= @blog.errors.count %>this blog cannot be saved due to error</h2>
+      <ul>
       <% @blog.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="blog_title">
+    <%= form.text_field :content, wrapper: false, placeholder:  "Compose new blog...", size: "37x8" %>
   </div>
-<% end %>
-<div class="blog_title">
-  <%= form.text_field :content, wrapper: false, placeholder:  "Compose new blog...", size: "37x8" %>
-</div>
-<%= form.submit %>
-<% end %>
-<%= link_to "back", blogs_path %>
+  <%= form.submit %>
+  <% end %>
+  <%= link_to "back", blogs_path %>

@@ -11142,3 +11142,223 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 1109ms (Views: 986.2ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-31 08:05:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (293.6ms)
+  Rendered blogs/new.html.erb within layouts/application (433.9ms)
+Completed 200 OK in 17371ms (Views: 17192.7ms | ActiveRecord: 21.7ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-31 08:06:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TbmbwMIDurFkmQTS//POme7+syTDlqC7dIX0yqyzlxZ+BuoqeA65C7xlBM+UIhZ2ykergH5W6ksu0SHNI7GTBQ==", "blog"=>{"content"=>""}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 740ms (Views: 639.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-31 08:11:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (42.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:10
+  Rendered blogs/index.html.erb within layouts/application (354.2ms)
+Completed 200 OK in 3769ms (Views: 3512.7ms | ActiveRecord: 56.9ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-31 08:11:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (240.7ms)
+  Rendered blogs/new.html.erb within layouts/application (350.5ms)
+Completed 200 OK in 1251ms (Views: 1149.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-31 08:12:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2l+st5ENMjE5WZYHTmsv2ndztPCnL9Y4ZWoGzoD0fFCh5mqS7beIq8lvtyafIFd1eRWya2NBSl4kiog1pJTTPw==", "blog"=>{"content"=>"Yoshihide Suga, the chief Cabinet secretary who has been Prime Minister Shinzo Abe’s right-hand man for nearly eight years, on Sunday emerged as a leading candidate to take over the nation’s highest political position.  After two days of speculation, news reports said the government’s top spokesman told Liberal Democratic Party Secretary-General Toshihiro Nikai he is intending to run for party president, and therefore prime minister.  His candidacy is seen as a major development in the race to succeed Abe, who abruptly announced Friday that he is stepping down because of a chronic illness. Abe refrained from nominating a successor and said he would not use his influence the selection process for his replacement.  The other key contenders so far are LDP policy chief Fumio Kishida and former Defense Minister Shigeru Ishiba, both of whom expressed a desire to run shortly after Abe’s surprise announcement.  Suga’s entry is rooted in the party’s ardent desire to build upon the continuity built around Abe, whose seven years and eight months in office brought a stability to politics that had been more or less absent for years. As one of Abe’s chief lieutenants, the 71-year-old Akita native will campaign on a ticket that promises continuity and stability, said Sebastian Maslow, a senior lecturer in international relations at Sendai Shirayuri Women’s University."}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (344.1ms)
+Completed 200 OK in 1075ms (Views: 988.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:12:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UyvqMKCVHOksbWZBULaJrJ6J6NU3QRaBjoCSTSUDrlhglJvaGpgfU/SRZlw7Z1FDujDwcYqBXHHU1EdKqgGqSw==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/162e37c4668fd2f2/variables" for 10.0.2.2 at 2020-08-31 08:12:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:26:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UyvqMKCVHOksbWZBULaJrJ6J6NU3QRaBjoCSTSUDrlhglJvaGpgfU/SRZlw7Z1FDujDwcYqBXHHU1EdKqgGqSw==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/0c3457f86a6320fe/variables" for 10.0.2.2 at 2020-08-31 08:26:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-31 08:26:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 33ms (ActiveRecord: 2.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Blog with 'id'=confirm:
+  app/controllers/blogs_controller.rb:50:in `set_blog'
+
+Started POST "/__better_errors/4a665ce166167514/variables" for 10.0.2.2 at 2020-08-31 08:26:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/0c3457f86a6320fe/variables" for 10.0.2.2 at 2020-08-31 08:26:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/0c3457f86a6320fe/variables" for 10.0.2.2 at 2020-08-31 08:26:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/4a665ce166167514/variables" for 10.0.2.2 at 2020-08-31 08:27:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-31 08:27:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2uHoakEquQXTw2u3divM+ULw7mapflLcaElBzRnEyKnpXpmA+ye6vws/a6od+hQWZkn2whS+GCwyHZTKlsbMug==", "blog"=>{"content"=>"Yoshihide Suga, the chief Cabinet secretary who has been Prime Minister Shinzo Abe’s right-hand man for nearly eight years, on Sunday emerged as a leading candidate to take over the nation’s highest political position.  After two days of speculation, news reports said the government’s top spokesman told Liberal Democratic Party Secretary-General Toshihiro Nikai he is intending to run for party president, and therefore prime minister.  His candidacy is seen as a major development in the race to succeed Abe, who abruptly announced Friday that he is stepping down because of a chronic illness. Abe refrained from nominating a successor and said he would not use his influence the selection process for his replacement.  The other key contenders so far are LDP policy chief Fumio Kishida and former Defense Minister Shigeru Ishiba, both of whom expressed a desire to run shortly after Abe’s surprise announcement.  Suga’s entry is rooted in the party’s ardent desire to build upon the continuity built around Abe, whose seven years and eight months in office brought a stability to politics that had been more or less absent for years. As one of Abe’s chief lieutenants, the 71-year-old Akita native will campaign on a ticket that promises continuity and stability, said Sebastian Maslow, a senior lecturer in international relations at Sendai Shirayuri Women’s University."}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 893ms (Views: 808.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:27:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYxo+Q5c1gz1n+jmGnswAcycnn2zJ/kgURq8+1cN4ySqMxkTtFHVti1j6Ptxquju6CWG2Q7ns9ALTmn82A/nNw==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/980cd44253715b4f/variables" for 10.0.2.2 at 2020-08-31 08:27:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/blogs/confirm" for 10.0.2.2 at 2020-08-31 08:27:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:50
+Completed 404 Not Found in 12ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Blog with 'id'=confirm:
+  app/controllers/blogs_controller.rb:50:in `set_blog'
+
+Started POST "/__better_errors/8a6be71813a2aae6/variables" for 10.0.2.2 at 2020-08-31 08:27:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs/confirm" for 10.0.2.2 at 2020-08-31 08:27:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2uHoakEquQXTw2u3divM+ULw7mapflLcaElBzRnEyKnpXpmA+ye6vws/a6od+hQWZkn2whS+GCwyHZTKlsbMug==", "blog"=>{"content"=>""}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 871ms (Views: 758.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:27:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EJq6ObUnO2IrPsSA+b/+l9A5AVLqKtVonP0cDRm17/H/RsCXNmfV1BQ+w9oNycVe/n8ofZo4aX4JyF3u2TTrA==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/bfc5a76e29393cd4/variables" for 10.0.2.2 at 2020-08-31 08:27:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:28:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EJq6ObUnO2IrPsSA+b/+l9A5AVLqKtVonP0cDRm17/H/RsCXNmfV1BQ+w9oNycVe/n8ofZo4aX4JyF3u2TTrA==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/a37e34039cfc8119/variables" for 10.0.2.2 at 2020-08-31 08:28:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:28:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EJq6ObUnO2IrPsSA+b/+l9A5AVLqKtVonP0cDRm17/H/RsCXNmfV1BQ+w9oNycVe/n8ofZo4aX4JyF3u2TTrA==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/cd7bbb032987bd90/variables" for 10.0.2.2 at 2020-08-31 08:28:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:29:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EJq6ObUnO2IrPsSA+b/+l9A5AVLqKtVonP0cDRm17/H/RsCXNmfV1BQ+w9oNycVe/n8ofZo4aX4JyF3u2TTrA==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/80ca48e3ea134912/variables" for 10.0.2.2 at 2020-08-31 08:29:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/80ca48e3ea134912/variables" for 10.0.2.2 at 2020-08-31 08:29:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/blogs" for 10.0.2.2 at 2020-08-31 08:30:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EJq6ObUnO2IrPsSA+b/+l9A5AVLqKtVonP0cDRm17/H/RsCXNmfV1BQ+w9oNycVe/n8ofZo4aX4JyF3u2TTrA==", "content"=>"", "commit"=>"submit"}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: blog:
+  app/controllers/blogs_controller.rb:46:in `blog_params'
+  app/controllers/blogs_controller.rb:13:in `create'
+
+Started POST "/__better_errors/ee077cdb2943be6e/variables" for 10.0.2.2 at 2020-08-31 08:30:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/ee077cdb2943be6e/variables" for 10.0.2.2 at 2020-08-31 08:30:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

@@ -12785,3 +12785,290 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 1396ms (Views: 1263.0ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2021-01-18 13:55:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError - FATAL:  database "twitterclone_test" does not exist
+:
+
+Started POST "/__better_errors/d9748633e5a58d20/variables" for 10.0.2.2 at 2021-01-18 13:55:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2021-01-18 13:59:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError - FATAL:  database "twitterclone_test" does not exist
+:
+
+Started POST "/__better_errors/ce5d718d0fd6b9cf/variables" for 10.0.2.2 at 2021-01-18 13:59:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (11403.6ms)[0m  [1m[35mCREATE DATABASE "twitterclone_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (222.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1040802489160564200)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBlogs (20200825025319)
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (25.1ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" bigserial primary key, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200825025319_create_blogs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200825025319"]]
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to Users (20200826111136)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200826111136"]]
+  ↳ bin/rails:9
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-18 18:09:15.457115"], ["updated_at", "2021-01-18 18:09:15.457115"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1040802489160564200)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/__better_errors/ce5d718d0fd6b9cf/variables" for 10.0.2.2 at 2021-01-18 18:11:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2021-01-18 18:12:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:13
+  Rendered blogs/index.html.erb within layouts/application (152.7ms)
+Completed 200 OK in 26506ms (Views: 26200.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2021-01-18 18:25:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:17
+  Rendered blogs/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 2302ms (Views: 2217.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2021-01-18 18:26:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered blogs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 899ms (Views: 784.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2021-01-18 18:27:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 959ms (Views: 841.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2021-01-18 18:28:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 885ms (Views: 790.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2021-01-18 18:29:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 835ms (Views: 724.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2021-01-18 18:31:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (1731.8ms)
+  Rendered blogs/new.html.erb within layouts/application (1914.1ms)
+Completed 200 OK in 2774ms (Views: 2626.7ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2021-01-18 18:31:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (6.8ms)
+  Rendered blogs/new.html.erb within layouts/application (118.6ms)
+Completed 200 OK in 947ms (Views: 819.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2021-01-18 18:32:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.5ms)
+  Rendered blogs/new.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 901ms (Views: 791.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2021-01-18 18:33:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.7ms)
+  Rendered blogs/new.html.erb within layouts/application (196.6ms)
+Completed 200 OK in 995ms (Views: 853.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 10.0.2.2 at 2021-01-18 18:34:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gFZPPd9xzTdnTOOdBtuHUBYjdPSJZpHnN7Lo2fTvcOHx3zSX2mhBScgTmwUp7M+wnrVK0JnZ+v2Le66XrfUVkQ==", "blog"=>{"content"=>"how to make a new app"}, "commit"=>"Tweet"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (86.9ms)
+Completed 200 OK in 994ms (Views: 842.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 10.0.2.2 at 2021-01-18 18:34:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qofp8/xl8+7eqpWY59AnUj/JMnyfH6qn7yNBOxkAjsDbDpJZ+Xx/kHH17QDI52+yt18MWI+gwb1T6gd1QBrrsA==", "blog"=>{"content"=>"how to make a new app"}, "commit"=>"Tweet"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:21
+  [1m[36mBlog Create (2.6ms)[0m  [1m[32mINSERT INTO "blogs" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "how to make a new app"], ["created_at", "2021-01-18 18:34:36.423258"], ["updated_at", "2021-01-18 18:34:36.423258"]]
+  ↳ app/controllers/blogs_controller.rb:21
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:21
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 44ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:34:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (227.8ms)
+Completed 200 OK in 1065ms (Views: 941.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:35:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 848ms (Views: 719.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:38:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 813ms (Views: 705.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:38:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 925ms (Views: 778.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:39:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 928ms (Views: 786.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:40:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 785ms (Views: 642.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:40:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered blogs/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 887ms (Views: 757.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:40:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered blogs/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 923ms (Views: 773.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:41:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:15
+  Rendered blogs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 904ms (Views: 767.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:41:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:19
+  Rendered blogs/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 905ms (Views: 769.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2021-01-18 18:41:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered blogs/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 867ms (Views: 736.3ms | ActiveRecord: 1.6ms)
+
+

@@ -1,8 +1,8 @@
-<h3>Send with the following content</h3>
+<h3>Send with the following content...</h3>
 <%= form_with(model: @blog, local: true) do |form| %>
   <%= form.hidden_field :content %>
   <p><%= @blog.content %></p>
-  <%= form.submit "submit" %>
+  <%= form.submit "Tweet" %>
 <% end %>
 <%= form_with(model: @blog, url: new_blog_path,  local: true, method: 'get') do |form| %>
   <%= form.hidden_field :content %>

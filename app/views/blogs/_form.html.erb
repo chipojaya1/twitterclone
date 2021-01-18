@@ -11,8 +11,8 @@
   <% end %>
   <div class="blog_title">
     <%= form.label :content %>
-    <%= form.text_field :content, wrapper: false, placeholder:  "Compose new blog..." %>
+    <%= form.text_field :content, wrapper: false, placeholder:  "Whats happening?" %>
   </div>
-  <%= form.submit %>
+  <%= form.submit 'Tweet' %>
   <% end %>
   <%= link_to "back", blogs_path %>

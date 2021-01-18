@@ -3,21 +3,27 @@
 <p class="alert"><%= alert %>
 <table>
   <div class="link">
-    <a href="/blogs/new" class = "link">New blog post</a>
+    <a href="/blogs/new" class = "link">Tweet</a>
   </div>
   <tr>
-    <th></th>
-    <th class="content">blog content</th>
-    <th class= "created_at">date posted</th>
+    <br>
+    <th class="content">Welcome to twiterclone!
+  </tr>
+    <th class="content2">This is the best place to see what’s happening in your world.
+  <tr>
+    <th class="content2">Find some people and topics to follow now.</th>
   </tr>
   <% @blog.each do |blog| %>
     <tr>
       <td class="content">
+        <hr>
         <strong>Chipo Jaya</strong><br>
         <small>@diverchipo</small><br>
       </td>
       <td class= "content"><%= blog.content %></td>
-      <td class= "created_at"><%= link_to blog.created_at, format: :default %></td>
+      <td class= "created_at">
+        <small><%= link_to blog.created_at.strftime('%Y/%-m/%-d %-H:%-M') %></small>
+      </td>
       <td><%= link_to 'Show', blog_path(blog.id) %></td>
       <td><%= link_to 'Edit', edit_blog_path(blog.id), data:{confirm: "are you sure you want to edit blog?"}  %></td>
       <td><%= link_to 'Delete', blog_path(blog.id), method: :delete, data:{confirm: "are you sure you want to delete blog?"} %></td>
